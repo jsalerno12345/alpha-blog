@@ -290,7 +290,7 @@ DEPENDENCIES
   error_highlight (>= 0.4.0)
   importmap-rails
   jbuilder
-  pg
+  pg (>= 0.18, < 2.0)
   puma (>= 5.0)
   rails (~> 7.2.1)
   rubocop-rails-omakase
@@ -301,6 +301,9 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   web-console
+
+RUBY VERSION
+   ruby 3.1.2p20
 
 BUNDLED WITH
    2.3.16
