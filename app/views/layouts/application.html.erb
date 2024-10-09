@@ -7,7 +7,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
     <%= yield :head %>
+    <%= javascript_include_tag 'application', 'data-turbo-track': 'reload' %>
 
     <link rel="manifest" href="/manifest.json">
     <link rel="icon" href="/icon.png" type="image/png">
@@ -17,6 +21,7 @@
   </head>
 
   <body>
+    <%= render 'layouts/messeges' %>
     <%= yield %>
   </body>
 </html>
